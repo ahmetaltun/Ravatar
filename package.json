@@ -1,0 +1,46 @@
+{
+  "name": "ravatar",
+  "version": "0.1.6",
+  "description": "React Avatar Placeholder",
+  "author": "Ahmet ALTUN <hi@ahmetaltun.dev>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ahmetaltun/ravatar.git"
+  },
+  "homepage": "https://ravatar-demo.pages.dev",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "ravatar",
+    "react avatar",
+    "react-avatar",
+    "image placeholder",
+    "avatar placeholder",
+    "avatar",
+    "placeholder"
+  ],
+  "type": "commonjs",
+  "devDependencies": {
+    "@types/node": "^22.14.1",
+    "@types/react": "^19.1.2",
+    "tsup": "^8.4.0",
+    "typescript": "^5.8.3"
+  },
+  "peerDependencies": {
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  },
+  "bugs": {
+    "url": "https://github.com/ahmetaltun/ravatar/issues"
+  }
+}
