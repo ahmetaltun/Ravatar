@@ -1,11 +1,10 @@
 import { JSX } from 'react';
-import { AvatarData, RavatarProps } from '@/types';
+import { RavatarProps } from '@/types';
 import { Image } from '@/components/image';
 import teamsAvatarsRaw from '@/components/avatars/teams.json';
 
-interface TeamsProps extends RavatarProps {
-  name: 'teams';
-}
+// Teams props but without name
+interface TeamsProps extends Omit<RavatarProps, 'name'> {}
 
 export interface TeamsDataItem {
   [key: string]: string;

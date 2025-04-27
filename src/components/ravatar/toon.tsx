@@ -1,11 +1,10 @@
 import { JSX } from 'react';
-import { AvatarData, RavatarProps } from '@/types';
+import { RavatarProps } from '@/types';
 import { Image } from '@/components/image';
 import toonAvatarsRaw from '@/components/avatars/toon.json';
 
-interface ToonProps extends RavatarProps {
-  name: 'toon';
-}
+// Toon Props but without name
+interface ToonProps extends Omit<RavatarProps, 'name'> {}
 
 export interface ToonDataItem {
   [key: string]: string;

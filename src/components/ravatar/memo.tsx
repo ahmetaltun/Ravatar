@@ -1,11 +1,10 @@
 import { JSX } from 'react';
-import { AvatarData, RavatarProps } from '@/types';
+import { RavatarProps } from '@/types';
 import { Image } from '@/components/image';
 import memoAvatarsRaw from '@/components/avatars/memo.json';
 
-interface MemoProps extends RavatarProps {
-  name: 'memo';
-}
+// Memo props but without name
+interface MemoProps extends Omit<RavatarProps, 'name'> {}
 
 export interface MemoDataItem {
   [key: string]: string;

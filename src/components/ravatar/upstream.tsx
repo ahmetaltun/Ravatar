@@ -1,11 +1,10 @@
 import { JSX } from 'react';
-import { AvatarData, RavatarProps } from '@/types';
+import { RavatarProps } from '@/types';
 import { Image } from '@/components/image';
 import upstreamAvatarsRaw from '@/components/avatars/upstream.json';
 
-interface UpstreamProps extends RavatarProps {
-  name: 'upstream';
-}
+// Upstream Props but without name
+interface UpstreamProps extends Omit<RavatarProps, 'name'> {}
 
 export interface UpstreamDataItem {
   [key: string]: string;

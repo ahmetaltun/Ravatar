@@ -1,11 +1,10 @@
 import { JSX } from 'react';
-import { AvatarData, RavatarProps } from '@/types';
+import { RavatarProps } from '@/types';
 import { Image } from '@/components/image';
 import notionAvatarsRaw from '@/components/avatars/notion.json';
 
-interface NotionProps extends RavatarProps {
-  name: 'notion';
-}
+// Notion Props but without name
+interface NotionProps extends Omit<RavatarProps, 'name'> {}
 
 export interface NotionDataItem {
   [key: string]: string;

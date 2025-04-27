@@ -1,11 +1,10 @@
 import { JSX } from 'react';
-import { AvatarData, RavatarProps } from '@/types';
+import { RavatarProps } from '@/types';
 import { Image } from '@/components/image';
 import threeDimensionalAvatarsRaw from '@/components/avatars/3d.json';
 
-interface ThreeDimensionalProps extends RavatarProps {
-  name: '3d';
-}
+// 3D Props but without name
+interface ThreeDimensionalProps extends Omit<RavatarProps, 'name'> {}
 
 export interface ThreeDimensionalDataItem {
   [key: string]: string;

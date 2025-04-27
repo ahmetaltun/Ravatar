@@ -1,11 +1,10 @@
 import { JSX } from 'react';
-import { AvatarData, RavatarProps } from '@/types';
+import { RavatarProps } from '@/types';
 import { Image } from '@/components/image';
 import blueyAvatarsRaw from '@/components/avatars/bluey.json';
 
-interface BlueyProps extends RavatarProps {
-  name: 'bluey';
-}
+// Bluey Props but without name
+interface BlueyProps extends Omit<RavatarProps, 'name'> {}
 
 export interface BlueyDataItem {
   [key: string]: string;

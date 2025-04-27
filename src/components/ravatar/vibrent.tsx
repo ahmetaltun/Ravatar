@@ -1,11 +1,10 @@
 import { JSX } from 'react';
-import { AvatarData, RavatarProps } from '@/types';
+import { RavatarProps } from '@/types';
 import { Image } from '@/components/image';
 import vibrentAvatarsRaw from '@/components/avatars/vibrent.json';
 
-interface VibrentProps extends RavatarProps {
-  name: 'vibrent';
-}
+// Vibrent Props but without name
+interface VibrentProps extends Omit<RavatarProps, 'name'> {}
 
 export interface VibrentDataItem {
   [key: string]: string;
